@@ -13,6 +13,7 @@ class PostsController < ApplicationController
       redirect_to post_path(@post)
     else
       render :edit
+    end
   end
 
   private
@@ -25,3 +26,4 @@ class PostsController < ApplicationController
     @post = Post.find(params[:id])
   end
 end
+
